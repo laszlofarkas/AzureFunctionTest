@@ -1,19 +1,27 @@
 module.exports = function (context, req) {
 
     context.log('JavaScript HTTP trigger function processed a request.');
-	context.log('request', req);
 
-    /*if (req.query.name || (req.body && req.body.name)) {
-        res = {
-            // status: 200, 
-            body: "Hello " + (req.query.name || req.body.name) + " this is a JS based tool!"
-        };
-    }
-    else {
-        res = {
-            status: 400,
-            body: "Please pass a name on the query string or in the request body"
-        };
-    }*/
+	var id = context.bindingData.id;
+	context.log('Method: ', req.method, " id: ", id);
+
+	var res;
+/*
+	if (req.method === 'HEAD') {
+		if ()
+	}
+
+	if (req.method === 'PUT') {
+		
+	}
+
+	if (req.method === 'GET') {
+		
+	}
+
+	if (req.method === 'DELETE') {
+		
+	}
+*/
     context.done(null, res);
 } 
