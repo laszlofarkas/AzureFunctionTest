@@ -1,0 +1,12 @@
+{
+  "name": "FlacTest",
+  "description": "FlacTest for using sql database",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laszlofarkas/AzureFunctionTest.git"
+  },
+  "dependencies": {
+	"tedious": "^1.14.0"
+  }
+}
