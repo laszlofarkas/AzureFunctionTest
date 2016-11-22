@@ -7,6 +7,6 @@
     "url": "https://github.com/laszlofarkas/AzureFunctionTest.git"
   },
   "dependencies": {
-    "tedious": "^1.14.0"
+	"tedious": "^1.14.0"
   }
 }

@@ -1,7 +1,7 @@
 var users = [];
 
-var Connection = require('../lib/tedious').Connection;
-var Request = require('../lib/tedious').Request;
+var Connection = require('tedious').Connection;
+var Request = require('tedious').Request;
 
 
 module.exports = function (context, req) {
