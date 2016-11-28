@@ -5,7 +5,7 @@
 		"type": "blobTrigger",
 		"direction": "in",
 		"path": "flactest/{blob}",
-		"connection":"<Name of app setting - see below>"
+		"connection":"WEBSITE_CONTENTAZUREFILECONNECTIONSTRING"
 	}
   ],
   "disabled": false
