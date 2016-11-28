@@ -1,4 +1,4 @@
 module.exports = function (context, blob) {
-	context.log('Node.js blob trigger function processed blob:', blob);
+	context.log("Kacsa count:", blob.match(/kacsa/g).length);
 	context.done();
 };
