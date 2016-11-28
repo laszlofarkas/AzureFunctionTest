@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+		"name": "blob",
+		"type": "blobTrigger",
+		"direction": "in",
+		"path": "flactest/{blob}",
+		"connection":"<Name of app setting - see below>"
+	}
+  ],
+  "disabled": false
+}
