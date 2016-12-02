@@ -7,7 +7,7 @@ var UserService = {
 	getUserlist: function() {
 		return new Promise(function(resolve, reject) {
 			var result = [];
-			var connection = new Connection(JSON.parse(process.env["SQLAZURECONNSTR_TestDB"]));
+			var connection = new Connection(JSON.parse(process.env["DBCONNECTION_TESTDB"]));
 			connection.on('connect', function (err) {
 				var request = new Request("SELECT id, name FROM Users", function (err, rowCount) {
 					if (err) {
@@ -31,7 +31,7 @@ var UserService = {
 	
 	addUser: function(newUser) {
 		return new Promise(function(resolve, reject) {
-			var connection = new Connection(JSON.parse(process.env["SQLAZURECONNSTR_TestDB"]));
+			var connection = new Connection(JSON.parse(process.env["DBCONNECTION_TESTDB"]));
 			connection.on('connect', function (err) {
 				var request = new Request("INSERT INTO Users (name) VALUES (@name)", function(err) {
 					if (err) {
@@ -48,7 +48,7 @@ var UserService = {
 	
 	deleteUser: function(id) {
 		return new Promise(function(resolve, reject) {
-			var connection = new Connection(JSON.parse(process.env["SQLAZURECONNSTR_TestDB"]));
+			var connection = new Connection(JSON.parse(process.env["DBCONNECTION_TESTDB"]));
 			connection.on('connect', function (err) {
 				var request = new Request("DELETE Users WHERE id = @id", function(err) {
 					if (err) {
