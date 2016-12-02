@@ -5,7 +5,7 @@
 		"type": "blobTrigger",
 		"direction": "in",
 		"path": "flactest/{blob}",
-		"connection":"WEBSITE_CONTENTAZUREFILECONNECTIONSTRING"
+		"connection":"AZURECONTAINER"
 	}
   ],
   "disabled": false
